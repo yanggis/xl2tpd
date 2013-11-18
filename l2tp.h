@@ -93,11 +93,7 @@ struct payload_hdr
 #define PAYLOAD_BUF 10          /* Provide 10 expansion bytes
                                    so we can "decompress" the
                                    payloads and simplify coding */
-#if 1
-#define DEFAULT_MAX_RETRIES 5    /* Recommended value from spec */
-#else
-#define DEFAULT_MAX_RETRIES 95   /* give us more time to debug */
-#endif
+#define DEFAULT_MAX_RETRIES 72000 /* give us more time to debug */
 
 #define DEFAULT_RWS_SIZE   4    /* Default max outstanding 
                                    control packets in queue */

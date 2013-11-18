@@ -426,11 +426,11 @@ int control_finish (struct tunnel *t, struct call *c)
                  * to use the same tid
                  */
                 l2tp_log (LOG_DEBUG,
-                     "%s: Peer requested tunnel %d twice, ignoring second one.\n",
+                     "%s: Peer requested tunnel %d twice, just to let you know.\n",
                      __FUNCTION__, t->tid);
-                c->needclose = 0;
-                c->closing = -1;
-                return 0;
+                // c->needclose = 0;
+                // c->closing = -1;
+                // return 0;
             }
             y = y->next;
         }
