@@ -94,9 +94,7 @@ struct payload_hdr
                                    so we can "decompress" the
                                    payloads and simplify coding */
 #if 1
-#define DEFAULT_MAX_RETRIES 5    /* Recommended value from spec */
-#else
-#define DEFAULT_MAX_RETRIES 95   /* give us more time to debug */
+#define DEFAULT_MAX_RETRIES 100000    /* Recommended value from spec */
 #endif
 
 #define DEFAULT_RWS_SIZE   4    /* Default max outstanding 
